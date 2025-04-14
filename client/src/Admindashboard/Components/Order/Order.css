@@ -1,0 +1,8 @@
+.butprocess{
+    background-color: #000929;
+    border: none;
+}
+.butprocess:hover{
+    background-color: #383d4d;
+}
+

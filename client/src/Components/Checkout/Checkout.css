@@ -1,0 +1,19 @@
+
+.shopping-cart-address-btn-top {
+    display: inline-block;
+    background-color: rgb(255, 255, 255)!important;
+    margin-top: 20px;
+    padding: 9px;
+    border-radius: 10px;
+    border: 1px solid #f01543;
+}
+
+.billing-address{
+    border: 1px solid #f01543;
+}
+
+.pickup:hover{
+    cursor: pointer;
+    background-color: #f01543;
+    color: white;
+}

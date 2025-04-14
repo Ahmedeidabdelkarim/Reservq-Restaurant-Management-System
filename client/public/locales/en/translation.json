@@ -1,0 +1,572 @@
+{
+    "navbar": {
+        "home": "Home",
+        "menu": "Menu",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact",
+        "adminDashboard": "Admin Dashboard",
+        "userDashboard": "User Dashboard",
+        "login": "Login",
+        "signup": "Sign Up",
+        "logout": "Logout"
+    },
+    "home": {
+        "title": "Crafting an Exceptional Dining Experience",
+        "subtitle": "Experience",
+        "description": "Welcome to ReservQ, where every meal is a masterpiece and every moment is memorable. Our passion for culinary excellence and warm hospitality creates an unforgettable dining experience.",
+        "delivery": "Delivery",
+        "pickup": "Pickup",
+        "inRestaurant": "In Restaurant",
+        "categories": {
+            "title": "Our Categories",
+            "seeMore": "See More",
+            "delishburger": "Delish Burger",
+            "sandwiches": "Sandwiches",
+            "mexicancuisine": "Mexican Cuisine",
+            "italiancuisine": "Italian Cuisine",
+            "items": "items"
+        },
+        "traditionalFood": {
+            "title": "Some Traditional Food Based on Location",
+            "noProducts": "No products found in this category",
+            "loading": "Loading...",
+            "price": "Price",
+            "rating": "⭐",
+            "addToCart": "Add to Cart"
+        },
+        "diningExperience": {
+            "title": "Process of Crafting Your Dining Experience",
+            "location": {
+                "title": "Select Your Location",
+                "description": "High-quality solution for beautiful food for customers"
+            },
+            "selectFood": {
+                "title": "Choose Your Food",
+                "description": "High-quality solution for beautiful food for customers"
+            },
+            "payment": {
+                "title": "Pay Cash or Online",
+                "description": "Providing elegant and sophisticated atmosphere for customers"
+            },
+            "delivery": {
+                "title": "Delivery or Pickup",
+                "description": "Allow customers to book tables easily"
+            }
+        },
+        "popularItems": {
+            "title": "Most Popular Items",
+            "premiumIngredients": "Premium Ingredients",
+            "specialSauce": "Special Sauce"
+        },
+        "testimonials": {
+            "title": "What Our Customers Say",
+            "testimonialText": "A true paradise for food lovers! ReservQ's flavors are a symphony of delight. Every bite tells a story of passion and skill. A must-visit for anyone seeking an unparalleled experience.",
+            "users": {
+                "jonson": {
+                    "name": "Johnson Roy",
+                    "role": "Job Holder"
+                },
+                "david": {
+                    "name": "David Ethic",
+                    "role": "Dog Trainer"
+                },
+                "robert": {
+                    "name": "Robert Fox",
+                    "role": "Bike Trainer"
+                }
+            }
+        }
+    },
+    "faq": {
+        "title": "Foodie FAQ: Your Culinary Queries Answered",
+        "questions": {
+            "cuisine": "What type of cuisine does your restaurant offer?",
+            "reservation": "Can I make a reservation online?",
+            "dressCode": "Is there a dress code for dining at your restaurant?"
+        },
+        "answers": {
+            "cuisine": "We offer a diverse range of cuisines including Italian, Asian fusion, and Mediterranean dishes that combine traditional flavors with modern twists.",
+            "reservation": "Yes! You can make a reservation through our website or by calling our restaurant directly.",
+            "dressCode": "We encourage smart casual attire to enhance your dining experience."
+        }
+    },
+    "find": {
+        "title": "Find out",
+        "highlight": "Better Restaurant",
+        "description": "We've done it carefully and simply. Combined with the ingredients makes for beautiful landings.",
+        "googlePlay": "Google Play",
+        "appStore": "App Store"
+    },
+    "thankYou": {
+        "title": "Thank You!",
+        "confirmation": "Your reservation is confirmed. We look forward to seeing you!",
+        "makeAnother": "Make Another Reservation"
+    },
+    "reservation": {
+        "title": "Reservation",
+        "makeReservation": "Make a Reservation",
+        "selectDate": "Select Date",
+        "selectTime": "Select Time",
+        "selectLocation": "Select Location",
+        "selectPartySize": "Select Party Size",
+        "indoor": "Indoor",
+        "outdoor": "Outdoor",
+        "continue": "Continue",
+        "reserve":"Reserve",
+        "dateError":"Please select a valid date",
+        "fieldError":"Please fill in all the required fields",
+        "fetchError":"An error occurred, please try again"
+
+    },
+    "footer": {
+        "description": "At ReservQ, we invite you to embark on a journey of taste and delight. Our tables are more than just places.",
+        "quickLinks": {
+            "title": "Quick Links",
+            "myAccount": "My Account",
+            "aboutUs": "About Us",
+            "storeLocator": "Store Locator",
+            "delivery": "Delivery",
+            "pickup": "Pickup"
+        },
+        "terms": {
+            "title": "Terms & Privacy",
+            "trust": "Trust & Safety",
+            "termsOfUse": "Terms of Use",
+            "privacyPolicy": "Privacy Policy"
+        },
+        "newsletter": {
+            "title": "Subscribe to Our Newsletter",
+            "placeholder": "Your Email",
+            "subscribe": "Subscribe"
+        },
+        "payment": {
+            "title": "We Accept the Following Payment Methods:"
+        },
+        "copyright": "© 2023 ReservQ. All rights reserved."
+    },
+    "menu": {
+        "title": "Complete Menu",
+        "search": {
+            "placeholder": "Search for dishes...",
+            "button": "Search"
+        },
+        "filter": {
+            "all": "All",
+            "categories": "Categories",
+            "price": "Price Range",
+            "rating": "Rating",
+            "fastFood": "Fast Food",
+            "desserts": "Desserts",
+            "beverages": "Beverages",
+            "star": "Star",
+            "stars": "Stars",
+            "mealType": "Meal Type",
+            "breakfast": "Breakfast",
+            "lunch": "Lunch",
+            "dinner": "Dinner"
+        },
+        "pagination": {
+            "previous": "Previous",
+            "next": "Next Page",
+            "page": "Page",
+            "of": "of"
+        },
+        "empty": {
+            "title": "No items found",
+            "description": "Try adjusting your search or filter to find what you're looking for."
+        },
+        "items": {
+            "loading": "Loading menu...",
+            "noProducts": "No products found",
+            "off": "% Off",
+            "reviews": "reviews",
+            "addToCart": "Add to Cart"
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "banner": {
+            "title": "About us"
+        },
+        "story": {
+            "title": "Our Story of food Culinary Excellence at ReservQ",
+            "description1": "There are many variations of passages of Lorem Ipsum available, but the to a majority have suffered alteration in some form, by injected humour, or find randomised words which don't look even slightly believable.",
+            "description2": "Over 20 years' experience providing top quality house Booking rant and sell for your Amazing Dream & Make you Happy"
+        },
+        "stats": {
+            "customers": {
+                "title": "90k+ Customers",
+                "description": "Believe in our service & Care"
+            },
+            "branches": {
+                "title": "100+ Branch",
+                "description": "Food ready for occupancy"
+            }
+        }
+    },
+    "cardAddress": {
+        "title": "Shopping Cart Address",
+        "addresses": "Addresses",
+        "billingAddress": "Billing Address",
+        "shippingAddress": "Shipping Address",
+        "addNew": "+ Add New",
+        "edit": "Edit",
+        "back": "Back",
+        "coupon": {
+            "title": "Apply Coupon",
+            "success": "Coupon Applied! You got {{discount}}% off.",
+            "invalid": "Invalid Coupon Code! Please try again."
+        },
+        "form": {
+            "fullName": "Full Name",
+            "email": "Email",
+            "phone": "Phone",
+            "country": "Country",
+            "state": "State",
+            "city": "City",
+            "address": "Address",
+            "saveAddress": "Save Address"
+        },
+        "payment": {
+            "title": "Select Payment Methods",
+            "creditCard": {
+                "cardNumber": "Card Number",
+                "expiryDate": "Expiry Date",
+                "cvv": "CVV",
+                "saveCard": "Save card for next time"
+            },
+            "paypal": "PayPal",
+            "paySecurely": "Pay Securely",
+            "processing":"processing payment..."
+        },
+        "order": {
+            "title": "Your Order",
+            "subtotal": "Subtotal",
+            "total": "Total"
+        },
+        "cartSummary": {
+            "title": "Cart Summary",
+            "placeholder":"enter coupon code",
+            "delivery": "Delivery",
+            "pickup": "Pick Up",
+            "size":"Size",
+            "price":"Price",
+            "quantity":"Quantity",
+            "inRestaurant": "In Restaurant",
+            "subtotal": "Subtotal",
+            "discount": "Discount",
+            "deliveryCharge": "Delivery Charge",
+            "total": "Total",
+            "applyCoupon": "Apply Coupon",
+            "enterCoupon": "Enter coupon code",
+            "apply": "Apply"
+        }
+    },
+    "contact": {
+        "banner": {
+            "title": "Contact Us"
+        },
+        "form": {
+            "title": "Contact us for any inquiries",
+            "contactInfo": {
+                "title": "Contact Information",
+                "description": "We're here to help and answer any questions you might have. We look forward to hearing from you!",
+                "email": "Email",
+                "firstName": "First Name",
+                "lastName": "Last Name",
+                "phone": "Phone Number",
+                "message": "Message",
+                "submit": "Send",
+                "success": "Your message has been sent successfully!",
+                "error": "An error occurred while sending your message. Please try again."
+            },
+            "placeholders": {
+                "email": "Enter your email",
+                "firstName": "Enter your first name",
+                "lastName": "Enter your last name",
+                "phone": "Enter your phone number",
+                "message": "Write your message here..."
+            }
+        }
+    },
+    "pagination": {
+        "previous": "Previous",
+        "next": "Next Page",
+        "page": "Page",
+        "of": "of"
+    },
+    "blog": {
+        "banner": {
+            "title": "Blog"
+        },
+        "items": {
+            "loading": "Loading blog posts...",
+            "noPosts": "No blog posts found",
+            "readMore": "Read More",
+            "date": "Date",
+            "author": "Author",
+            "comments": "Comments"
+        },
+        "details": {
+            "title": "Blog Details",
+            "latestBlog": "Latest Blog",
+            "followUs": "Follow Us",
+            "comments": "Comments",
+            "noComments": "No comments yet. Be the first to comment!",
+            "leaveComment": "Leave a Comment",
+            "commentPlaceholder": "Message Here *",
+            "submit": "Submit Now",
+            "submitting": "Submitting...",
+            "emailNote": "Your email address will not be published. Required fields are marked *",
+            "error": {
+                "load": "Failed to load blog details!",
+                "comments": "Failed to load comments!",
+                "submit": "Failed to submit comment. Please try again later."
+            }
+        }
+    },
+    "food": {
+        "frequentlyBought": "Frequently Bought Together",
+        "variationSize": "Variation Size",
+        "addToCart": "Add to Cart",
+        "recentOrders": "Recent Orders",
+        "off": "Off",
+        "details": "Food Details",
+        "loading": "Loading...",
+        "notFound": "Food item not found",
+        "error": {
+            "fetch": "Failed to fetch food item",
+            "toast": "Failed to fetch food item. Please try again."
+        },
+        "items": {
+            "chickenLeg": "4 Piece Chicken",
+            "drinks": "Drinks",
+            "extraCheese": "Extra Cheese",
+            "spicySauce": "Spicy Sauce"
+        },
+        "tabs": {
+            "details": "Food Details",
+            "video": "Video",
+            "reviews": "Reviews",
+            "ingredients": "Ingredients",
+            "preparations": "Preparations",
+            "noReviews": "No reviews yet"
+        }
+    },
+    "dashboard": {
+        "title": "User Dashboard",
+        "admin": "Admin",
+        "editProfile": "Edit Profile",
+        "address": "Address",
+        "orders": "Order & Reordering",
+        "wishlist": "Wishlist",
+        "changePassword": "Change Password",
+        "logout": "Logout",
+        "dashboard": "Dashboard",
+        "welcome": "Let's check your today",
+        "profileImage": "Profile Image",
+        "imageNote": "Upload a profile image (JPG, PNG, GIF)",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone",
+        "country": "Country",
+        "state": "State",
+        "city": "City",
+        "selectCountry": "Select Country",
+        "selectState": "Select State",
+        "selectCity": "Select City",
+        "saving": "Saving...",
+        "save": "Save now",
+        "loading": "Loading orders...",
+        "retry": "Retry",
+        "orderId": "Order ID",
+        "items": "Items",
+        "date": "Date",
+        "total": "Total Amount",
+        "action": "Action",
+        "status": {
+            "title":"Status",
+            "processing": "Processing",
+            "delivered": "Delivered",
+            "pending": "Pending",
+            "cancelled": "Cancelled"
+        },
+        "noOrders": "No orders found",
+        "noOrdersText": "You haven't placed any orders yet.",
+        "browseMenu": "Browse Menu",
+        "addToCart": "Add to Cart",
+        "emptyWishlist": "Your wishlist is empty",
+        "emptyWishlistText": "Add items to your wishlist to save them for later.",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm New Password",
+        "enterNewPassword": "Enter your new password",
+        "confirmNewPassword": "Confirm your new password",
+        "updating": "Updating...",
+        "updatePassword": "Update Password",
+        "logoutConfirm": "Are you sure? Logout",
+        "no": "No!",
+        "yes": "Yes!"
+    },
+    "address": {
+        "title": "Address Management",
+        "billing": "Billing Address",
+        "shipping": "Shipping Address",
+        "edit": "Edit",
+        "loading": "Loading...",
+        "name": "Name",
+        "addressLabel": "Address",
+        "location": "Location",
+        "phone": "Phone",
+        "notProvided": "Not provided",
+        "noShippingAddress": "No shipping address saved. Click edit to add one.",
+        "editBilling": "Edit Billing Address",
+        "editShipping": "Edit Shipping Address",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "country": "Country",
+        "state": "State",
+        "city": "City",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "saveChanges": "Save Changes"
+    },
+    "cart": {
+        "title": "Shopping Cart",
+        "emptyCart": "Your Cart is Empty 🛒",
+        "continueShopping": "Continue Shopping",
+        "foodImage": "Food Image",
+        "details": "Details",
+        "price": "Price",
+        "quantity": "Quantity",
+        "total": "Total",
+        "action": "Action",
+        "view": "View",
+        "remove": "Remove",
+        "proceedToCheckout": "Proceed to Checkout →",
+        "warning": "Warning",
+        "selectItems": "Please select at least one item before proceeding to checkout.",
+        "size": "Size",
+        "addons": "Addons",
+        "address": {
+            "title": "Delivery Address",
+            "select": "Select Address",
+            "addNew": "Add New Address",
+            "edit": "Edit Address",
+            "default": "Default Address"
+        },
+        "card": {
+            "title": "Payment Method",
+            "select": "Select Card",
+            "addNew": "Add New Card",
+            "edit": "Edit Card",
+            "default": "Default Card"
+        }
+    },
+    "foodModal": {
+        "selectAddons": "Select Add-ons (Optional)",
+        "total": "Total",
+        "size": {
+            "small": "Small (+$0)",
+            "medium": "Medium (+$5)",
+            "large": "Large (+$10)"
+        },
+        "update": "Update"
+    },
+    "login": {
+        "title": "Welcome back",
+        "subtitle": "Welcome back! Please enter your details.",
+        "email": "Email",
+        "emailPlaceholder": "E-mail",
+        "password": "Password",
+        "passwordPlaceholder": "Password",
+        "forgotPassword": "Forgot Password",
+        "signIn": "Sign In",
+        "signingIn": "Signing In...",
+        "noAccount": "Don't have an account?",
+        "signUp": "Sign up",
+        "terms": "You agree to ReservQ",
+        "termsLink": "Terms of Use & Privacy Policy",
+        "errors": {
+            "email": {
+                "required": "Email is required",
+                "invalid": "Invalid email address"
+            },
+            "password": {
+                "required": "Password is required"
+            }
+        },
+        "resetPassword": "Reset Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password",
+        "enterNewPassword": "Enter your new password",
+        "confirmNewPassword": "Confirm your new password",
+        "resetPasswordButton": "Reset Password",
+        "invalidToken": "Invalid or expired token",
+        "passwordResetSuccess": "Password reset successfully",
+        "passwordResetFailed": "Failed to reset password"
+    },
+    "emailSent": {
+        "title": "Check Your Email",
+        "message": "If an account exists with this email, you'll receive a password reset link shortly.",
+        "backToLogin": "Back to Login"
+    },
+    "forgotPassword": {
+        "message": "Enter your email to receive a password reset link.",
+        "sendLink": "Send Reset Link"
+    },
+    "signup": {
+        "title": "Create an Account",
+        "subtitle": "Sign up to get started",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "signUp": "Sign Up",
+        "signingUp": "Signing Up...",
+        "alreadyHaveAccount": "Already have an account?",
+        "signIn": "Sign in",
+        "terms": "By signing up, you agree to ReservQ",
+        "termsLink": "Terms of Use & Privacy Policy",
+        "errors": {
+            "firstName": {
+                "required": "First name is required"
+            },
+            "lastName": {
+                "required": "Last name is required"
+            },
+            "email": {
+                "required": "Email is required",
+                "invalid": "Invalid email address"
+            },
+            "password": {
+                "required": "Password is required",
+                "min": "Password must be at least 6 characters",
+                "lowercase": "Password must contain at least one lowercase letter",
+                "number": "Password must contain at least one number"
+            },
+            "confirmPassword": {
+                "required": "Confirm password is required",
+                "match": "Passwords must match"
+            }
+        },
+        "success": "User created successfully",
+        "error": "An error occurred. Please try again.",
+        "emailExists": "Email already exists"
+    },
+    "confirmation": {
+        "title": "Reservation Confirmed!",
+        "bookingDetails": "Your table for {{partySize}} has been reserved for {{date}} at {{time}} ({{location}} seating)",
+        "namePlaceholder": "Enter your name",
+        "phonePlaceholder": "Enter your phone number",
+        "emailPlaceholder": "Enter your email",
+        "bookNow": "Confirm Booking"
+    },
+    "error404": {
+    "title": "Oops! Page Not Found",
+    "description": "The page you're looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "returnHome": "Return to Homepage"
+  }
+}

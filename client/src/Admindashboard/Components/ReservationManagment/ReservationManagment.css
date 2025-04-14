@@ -1,0 +1,15 @@
+.colorclear{
+    background-color: #0B0B2B;
+    border: none;
+}
+.colorclear:hover{
+    background-color: #141453;
+}
+.coloredit{
+    background-color: #141453;
+    border: none;
+}
+.coloredit:hover{
+    background-color: #232365;
+
+}

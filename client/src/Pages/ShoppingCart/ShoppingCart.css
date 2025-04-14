@@ -1,0 +1,24 @@
+.thead-dark th{
+    background-color: rgb(228, 227, 227);
+    padding: 20px 0px;
+}
+
+/* Change the background of the checked checkbox */
+.custom-checkbox .form-check-input{
+    border: 1px solid #8a8a8a;
+}
+.custom-checkbox .form-check-input:checked {
+    background-color: red !important;
+    border-color: red !important;
+  }
+
+@media (max-width: 992px) { /* Medium screens and below */
+    .custom-scroll {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent table from wrapping */
+    }
+  
+    table {
+      min-width: 900px; /* Ensures horizontal scroll appears when content is wide */
+    }
+  }

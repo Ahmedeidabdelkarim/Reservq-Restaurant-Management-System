@@ -1,0 +1,30 @@
+/* 404 Page Styles */
+.error-page {
+    padding: 100px 0;
+    text-align: center;
+    color: #000;
+  }
+  
+  .error-code {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .error-code h1 {
+    font-size: 8rem;
+    color: #dc3545;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .error-icon {
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+  }
+  
+  .min-vh-80 {
+    min-height: 80vh;
+  }

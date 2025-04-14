@@ -1,0 +1,243 @@
+{
+  "users": [
+    {
+      "firstName": "Ahmed",
+      "lastName": "Ali",
+      "email": "ae1893@fayoum.edu.eg",
+      "phone": "",
+      "country": "",
+      "state": "",
+      "city": "",
+      "address": "Near School",
+      "id": "5dc3",
+      "password": "123123"
+    },
+    {
+      "id": "5692",
+      "firstName": "dfg",
+      "lastName": "dfg",
+      "email": "ahmed1@gmail.com",
+      "password": "ahmed123"
+    }
+  ],
+  "admin": [
+    {
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": "e999"
+    }
+  ],
+  "menu": [
+    {
+      "id": "1",
+      "name": "Pork Chop with Apple Chutney",
+      "price": 15,
+      "rating": 4.7,
+      "size": "Small",
+      "addon": "Soft Drinks",
+      "quantity": 3,
+      "discount": 20,
+      "images": [
+        "https://reservq.vercel.app/assets/traditional-3-248258a0.png",
+        "https://reservq.vercel.app/assets/slick-2-27cbc8f2.png",
+        "https://reservq.vercel.app/assets/slick-5-46f41764.png",
+        "https://reservq.vercel.app/assets/slick-4-884dd382.png",
+        "https://reservq.vercel.app/assets/slick-3-39226dc4.png"
+      ],
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Basil"
+      ],
+      "meal_contents": [
+        {
+          "item": "Chicken Pieces",
+          "quantity": 4
+        },
+        {
+          "item": "Spicy Sauce",
+          "quantity": 1
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "user": "John Doe",
+          "userImage": "https://reservq.vercel.app/assets/comments-1-12d61094.png",
+          "rating": 5,
+          "comment": "Amazing pizza!",
+          "time": "June 1, 2022 at 11:27 AM"
+        },
+        {
+          "id": 2,
+          "user": "Jane Smith",
+          "userImage": "https://reservq.vercel.app/assets/comments-2-cb3f236d.png",
+          "rating": 4,
+          "comment": "Good pizza, but could be better",
+          "time": "June 1, 2022 at 11:27 AM"
+        },
+        {
+          "id": 3,
+          "user": "Bob Johnson",
+          "userImage": "https://reservq.vercel.app/assets/comments-3-0b5f04cf.png",
+          "rating": 3,
+          "comment": "Average pizza",
+          "time": "June 1, 2022 at 11:27 AM"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/tJlzIJaokVY",
+      "category": "all"
+    },
+    {
+      "id": "2",
+      "name": "Eggplant Parmesan & Linguine",
+      "price": 20,
+      "rating": 4.7,
+      "size": "Small",
+      "quantity": 1,
+      "addon": "Soft Drinks",
+      "discount": 20,
+      "images": [
+        "https://reservq.vercel.app/assets/traditional-4-d8574aac.png",
+        "https://reservq.vercel.app/assets/slick-2-27cbc8f2.png",
+        "https://reservq.vercel.app/assets/slick-5-46f41764.png",
+        "https://reservq.vercel.app/assets/slick-4-884dd382.png",
+        "https://reservq.vercel.app/assets/slick-3-39226dc4.png"
+      ],
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Pecorino Cheese",
+        "Guanciale",
+        "Black Pepper"
+      ],
+      "meal_contents": [
+        {
+          "item": "Chicken Pieces",
+          "quantity": 4
+        },
+        {
+          "item": "Spicy Sauce",
+          "quantity": 1
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Emma Smith",
+          "userImage": "https://reservq.vercel.app/assets/comments-2-cb3f236d.png",
+          "rating": 4,
+          "comment": "Creamy and delicious!",
+          "time": "June 1, 2022 at 11:27 AM"
+        },
+        {
+          "id": 2,
+          "user": "Michael Johnson",
+          "userImage": "https://reservq.vercel.app/assets/comments-3-0b5f04cf.png",
+          "rating": 3,
+          "comment": "Decent food, but could be better",
+          "time": "June 1, 2022 at 11:27 AM"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/tJlzIJaokVY"
+    },
+    {
+      "id": "3",
+      "name": "Fish Tacos with Chipotle Crema",
+      "price": 30,
+      "rating": 4.7,
+      "quantity": 1,
+      "size": "Small",
+      "addon": "Soft Drinks",
+      "discount": 20,
+      "images": [
+        "https://reservq.vercel.app/assets/traditional-5-89320b60.png",
+        "https://reservq.vercel.app/assets/slick-2-27cbc8f2.png",
+        "https://reservq.vercel.app/assets/slick-5-46f41764.png",
+        "https://reservq.vercel.app/assets/slick-4-884dd382.png",
+        "https://reservq.vercel.app/assets/slick-3-39226dc4.png"
+      ],
+      "ingredients": [
+        "Romaine Lettuce",
+        "Parmesan Cheese",
+        "Croutons",
+        "Caesar Dressing",
+        "Anchovies"
+      ],
+      "meal_contents": [
+        {
+          "item": "Chicken Pieces",
+          "quantity": 4
+        },
+        {
+          "item": "Spicy Sauce",
+          "quantity": 1
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Sophia Lee",
+          "userImage": "https://reservq.vercel.app/assets/comments-3-0b5f04cf.png",
+          "rating": 5,
+          "comment": "Fresh and flavorful!",
+          "time": "June 1, 2022 at 11:27 AM"
+        },
+        {
+          "id": 2,
+          "user": "William Davis",
+          "userImage": "https://reservq.vercel.app/assets/comments-2-cb3f236d.png",
+          "rating": 4,
+          "comment": "Good food, but could be better",
+          "time": "June 1, 2022 at 11:27 AM"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/tJlzIJaokVY"
+    }
+  ],
+  "categories": {
+    "vegetarian": [
+      {
+        "name": "Quinoa-Stuffed Bell Pepper",
+        "price": 30,
+        "rating": 4.7,
+        "image": "https://reservq.vercel.app/assets/traditional-6-c7b53cff.png"
+      },
+      {
+        "name": "BBQ Pulled Pork Sandwich",
+        "price": "20",
+        "rating": 4.7,
+        "image": "https://reservq.vercel.app/assets/traditional-4-d8574aac.png"
+      }
+    ],
+    "disserts": [
+      {
+        "name": "Eggplant Parmesan & Linguine",
+        "price": 30,
+        "rating": 4.7,
+        "image": "https://reservq.vercel.app/assets/featured-1-edcbb703.png"
+      },
+      {
+        "name": "Quinoa-Stuffed Bell Pepper",
+        "price": 30,
+        "rating": 4.7,
+        "image": "https://reservq.vercel.app/assets/traditional-4-d8574aac.png"
+      },
+      {
+        "name": "BBQ Pulled Pork Sandwich",
+        "price": 30,
+        "rating": 4.7,
+        "image": "https://reservq.vercel.app/assets/featured-3-9d584dcf.png"
+      }
+    ],
+    "italians": [
+      {
+        "name": "jf",
+        "price": "20",
+        "rating": "",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4-lSvmNEH0HkNzOVjX53sVkV3gOJ2x7NRQ&s"
+      }
+    ],
+    "French": []
+  }
+}

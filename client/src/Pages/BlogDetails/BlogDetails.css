@@ -1,0 +1,32 @@
+.comment-box{
+    border: 1px solid gray;
+    padding: 20px 10px;
+}
+
+.box2{
+    margin-left: 10%;
+}
+
+.form{
+    background-color: rgb(242, 242, 242);
+}
+
+/* Comment Profile Image */
+.img-per1 {
+    width: 60px;
+    height: 60px;
+}
+
+.img-per1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/*right bar */
+
+.search-bar,.sidebar,.follow-us{
+    background-color: rgb(242, 242, 242);
+}

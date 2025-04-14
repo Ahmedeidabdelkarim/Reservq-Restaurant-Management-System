@@ -1,0 +1,350 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%); /* Start off-screen */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+.header {
+    position: fixed; /* Keep header fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 999; /* Ensure it appears above other content */
+    min-height: 80px; /* Adjust if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent; /* Background color */
+    box-shadow: 0 14px 16px rgba(11, 2, 55, 0.1); /* Shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+.header.solid {
+    animation: slideDown 1s ease-out; /* Apply slide down animation */
+    background-color: #000929 !important; /* Change background color when hidden */
+
+}
+
+.header.hidden  {
+    background-color: transparent;
+}
+
+/* MyNavbar.css */
+.navbar-collapse {
+    flex-grow: 0 !important; /* Prevents unwanted stretching */
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navbar .form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+.navbar {
+    /* Optional: Add shadow for better visibility */
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.nav-link {
+    color: white; /* Set link color to white */
+}
+
+.nav-link:hover {
+    color: #ddd; /* Change link color on hover */
+}
+
+
+/* Custom placeholder styles */
+.custom-placeholder::placeholder {
+    color: gray ; /* Set placeholder text color to white */
+    opacity: 1; /* Ensure opacity is set to fully visible */
+}
+
+/* Search icon */
+.search-bar-container {
+    height: 40px; /* Ensures the container doesn't shrink */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .search-bar input {
+    height: 40px !important; /* Prevents height change */
+    max-width: 250px;
+    min-width: 250px;
+    padding: 8px 12px;
+    font-size: 16px;
+    transition: none; /* Disable animations that might affect position */
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    transform: none !important; /* Stops any unwanted movement */
+  }
+  
+  .search-icon {
+      position: absolute;
+      top: 40%;
+      right: 16px;
+      transform: translateY(-50%);
+      color: gray;
+      border: 1px solid transparent;
+  }
+  
+  .search-button {
+      background-color: transparent; /* Make background transparent */
+      border: none; /* Remove border */
+      padding: .375rem .75rem; /* Adjust padding */
+      display: flex; /* Align icon properly */
+      align-items: center; /* Center icon vertically */
+  }
+  .list-group-item:hover {
+      background-color: #DC3545 !important;
+      color: white !important;
+      cursor: pointer;
+    }
+    
+  /* Disable hover effect */
+  .search-button:hover {
+      background-color: transparent; /* No background change on hover */
+  }
+  
+  /* Optional: Disable active effect */
+  .search-button:active {
+      background-color: transparent; /* No background change on active */
+  }
+
+/* favourite icon */
+.favorit-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: .5rem .5rem;
+    margin-right: 7px;
+}
+
+.favorit-icon:hover {
+    background-color: #dc3545; /* Change icon color on hover */
+    border-color: #dc3545;
+    transition: all .3s;
+}
+.favorit-icon:hover .text-count{
+    background: white;
+    color: #dc3545;
+}
+
+.text-count{
+    top: 5px;
+    right: -20px;
+    background-color: #dc3545;
+}
+
+/*cart-icon */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: black;
+    padding: .5rem .4rem;
+}
+
+.cart-icon:hover {
+    background-color: #dc3545; /* Change icon color on hover */
+    border-color: #dc3545;
+    transition: all .3s;
+}
+
+.cart-icon:hover .text-count{
+    background: white;
+    color: #dc3545;
+}
+/* Custom button styles */
+.logout-btn{
+    height: 50px;
+    margin-top: 5px;
+    padding: 0rem 1rem;
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+.signup-button {
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    border-color: white; /* Set border color to white */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.signup-button:hover,.signup-button:active {
+    border-color: #dc3545!important;
+    background-color: #dc3545 !important; /* Change background color to red on hover */
+    color: white; /* Ensure text remains white */
+}
+
+.login-button {
+    padding: 0.5rem 2rem;
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.login-button:hover ,.login-button:active{
+    background-color: white !important; /* Change background color to red on hover */
+    color: black !important; /* Ensure text remains white */
+}
+.toggle-btn{
+    background-color: red ;
+    display: none;
+}
+
+.toggle-btn:hover,.toggle-btn:active{
+    background-color: red !important;
+}
+
+/* Custom Offcanvas Styles */
+.custom-offcanvas {
+    background-color: #f8f9fa; /* Light background */
+    width: 250px !important; /* Adjust width as needed */
+}
+
+.custom-offcanvas .offcanvas-header {
+    color: black; /* White text for header */
+}
+
+.custom-offcanvas .offcanvas-body {
+    padding: 20px;
+}
+
+.custom-offcanvas .nav-link {
+    color: #343a40; /* Dark text for links */
+    transition: color 0.3s ease;
+    position: relative;
+    
+}
+
+.custom-offcanvas .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 6%; /* Start at center */
+    bottom: 0;
+    width: 0; /* Initially hidden */
+    height: 2px;
+    background-color: #656565;
+    transition: all 0.3s ease-in-out;/* Center align */
+  }
+
+  .custom-offcanvas .nav-link:hover::after {
+    width: 40%; /* Adjust to the desired small length */
+  }
+
+.custom-offcanvas .nav-link:hover {
+    color: #007bff; /* Blue text on hover */
+}
+
+/* Custom Overlay */
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 0; 
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.836);
+    z-index: 1040; 
+    transition: width 0.6s ease-in-out; 
+  }
+  
+  /* When sidebar is open, overlay expands from left to right */
+  .overlay-active {
+    transition-delay: .2s;
+    width: 100%; 
+  }
+
+
+@media (max-width: 1200px) {
+    .toggle-btn{
+        display: block;
+    }
+    .header.solid {
+        animation: slideDown 1s ease-out; /* Apply slide down animation */
+        background-color: white !important; /* Change background color when hidden */
+    
+    }
+    
+    .header.hidden  {
+        background-color: white;
+    }
+    
+
+}
+
+@media (max-width:768px){
+    .image-container{
+        display: none;
+    }
+    .custom-offcanvas{
+        width: 240px !important;
+    }
+}
+
+.lang-toggle-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    gap: 0.5rem;
+}
+
+.lang-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lang-select {
+    color: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0.2rem;
+    border-radius: 3px;
+    width: 50px;
+    text-align: center;
+}
+
+.lang-select:focus {
+    outline: none;
+}
+
+.lang-select option {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* For mobile view */
+@media (max-width: 1200px) {
+    .lang-toggle-btn {
+        padding: 0.3rem;
+    }
+    
+    .lang-select {
+        font-size: 0.8rem;
+        width: 40px;
+    }
+}
+

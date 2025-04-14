@@ -1,0 +1,43 @@
+.insideside{
+    background-color: #000929;
+    color: white;
+}
+.sidepanel{
+    background-color: #000929;
+    color: white;
+}
+.gradcard{
+    background: rgb(2,15,64);
+    background: linear-gradient(345deg, rgba(2,15,64,1) 0%, rgba(222,187,242,1) 100%);
+    color: white;
+    min-height: 150px; /* Sets minimum height for all cards */
+    height: 100%;
+    
+}
+.butprocess{
+    background-color: #000929;
+    border: none;
+    height: 100;
+}
+.butprocess:hover{
+    background-color: #383d4d;
+
+}
+.nav-item {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.nav-item.active {
+    background: #ff3366;
+    color: white;
+    border-radius: 5px;
+}
+.nav-item:hover{
+    background: #912d46;
+    color: white;
+    border-radius: 5px;
+}

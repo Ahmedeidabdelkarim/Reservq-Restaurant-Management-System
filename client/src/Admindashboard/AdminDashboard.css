@@ -1,0 +1,55 @@
+.nav-item {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Align icons and text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Highlight the active menu item */
+.nav-item:hover, .nav-item.active, .nav-item:has(.active) {
+    background: #ff3366;
+}
+
+/* Sidebar and Content Scroll */
+.sidepanel {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden; /* Dark background for sidebar */
+}
+
+.content-area {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    background: #f8f9fa; /* Light background for contrast */
+}
+
+/* Custom scrollbar for WebKit browsers */
+.content-area::-webkit-scrollbar,
+.sidepanel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content-area::-webkit-scrollbar-thumb,
+.sidepanel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.content-area::-webkit-scrollbar-thumb:hover,
+.sidepanel::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Firefox scrollbar */
+.content-area, .sidepanel {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    white-space: nowrap;
+}

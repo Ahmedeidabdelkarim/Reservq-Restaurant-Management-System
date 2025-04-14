@@ -1,0 +1,269 @@
+.search-container {
+  position: relative;
+}
+
+.search-results {
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-results::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.search-loading {
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.search-results .list-group-item {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+
+.custom-placeholder::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.search-button {
+  padding: 0.375rem 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-button:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.search-icon-button {
+  color: white;
+  padding: 0.5rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .search-icon-button {
+    color: #091b3a;
+  }
+}
+
+.search-icon-button svg {
+  width: 55px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.search-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.search-modal .modal-content {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 12px;
+  color: white;
+}
+
+.search-modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+}
+
+.search-modal-header .modal-title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.search-modal-body {
+  padding: 1.5rem;
+}
+
+.search-form {
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  background-color: #2a2a2a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.search-input:focus {
+  background-color: #2a2a2a;
+  border-color: #dc3545;
+  color: white;
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.search-results .list-group-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.search-results .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.search-results .list-group-item:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+
+
+.search-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-results::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+
+
+.search-button {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease;
+}
+
+.search-button:hover {
+  color: #dc3545;
+  background-color: transparent;
+}
+
+.search-dropdown {
+  position: fixed;
+  top: 85px; /* Height of the navbar */
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #091b3a;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-dropdown-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.search-form {
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.search-input:focus {
+  color: white;
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.search-results .list-group-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.search-results .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.search-results .list-group-item:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.search-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-button {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease;
+}
+
+.search-button:hover {
+  color: #dc3545;
+  background-color: transparent;
+} 

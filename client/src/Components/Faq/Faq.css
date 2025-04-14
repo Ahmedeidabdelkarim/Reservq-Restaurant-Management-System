@@ -1,0 +1,126 @@
+/* FAQ Section Styling */
+.faq-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+    margin-top: -4% !important;
+  }
+  .custom-accordion .accordion-button {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-weight: bold;
+    color: #333 !important;
+    padding: 30px;
+    font-size: 1.2rem;
+  }
+  
+  .custom-accordion .accordion-button:not(.collapsed) {
+    color: #333 !important;
+    background-color: transparent !important;
+  }
+  
+  .custom-accordion-body {
+    color: #6c757d;
+    padding: 30px;
+    border-top: 1px solid #dee2e6;
+    font-size: 1.2rem;
+  }
+  
+  /* Card Styling */
+  .faq-card {
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .over-lay1{
+    background-color: rgba(5, 13, 100, 0.874);
+}
+
+.over-lay2{
+  background-color: rgba(135, 17, 17, 0.836);
+}
+
+  @media(max-width :948px) {
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .custom-accordion-header {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-accordion-header:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .custom-accordion-body {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+  }
+  
+  /* RTL Support */
+  [dir="rtl"] .custom-accordion-header {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .custom-accordion-body {
+    text-align: right;
+  }
+  
+  /* LTR Support */
+  [dir="ltr"] .custom-accordion-header {
+    text-align: left;
+  }
+  
+  [dir="ltr"] .custom-accordion-body {
+    text-align: left;
+  }
+  
+  /* Accordion arrow direction */
+  [dir="rtl"] .custom-accordion .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+    transform: rotate(180deg);
+  }
+  
+  [dir="ltr"] .custom-accordion .accordion-button::after {
+    margin-left: auto;
+    margin-right: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  [dir='rtl'] .custom-accordion .accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+    transform: rotate(180deg);
+  }
+  
+  [dir='rtl'] .custom-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(360deg);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .faq-section {
+      padding: 2rem 0;
+    }
+    
+    .custom-accordion-header,
+    .custom-accordion-body {
+      padding: 0.75rem;
+    }
+  }
+  

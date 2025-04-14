@@ -1,0 +1,65 @@
+.together-box{
+    background-color: #f8f9fa;
+    
+}
+
+.together-box-item{
+    background-color: #fff;
+    border-radius: .5rem;
+}
+
+/* RTL Checkbox Styles */
+.form-check-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form-check-reverse .form-check-input {
+    margin-right: 0;
+    margin-left: 0.5em;
+    float: none;
+}
+
+.form-check-reverse .form-check-label {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form-check input[type='checkbox']{
+    border: 1px solid #dc3545;
+    box-shadow: none;
+}
+
+.form-check input[type='checkbox']:checked{
+    background-color: #dc3545;
+}
+
+.plus-btn{
+    border:1px solid #dc3545 !important;
+    background-color: #dc3545 !important;
+}
+
+.minus-btn{
+    border: 1px solid #fff8ed;
+    background-color: #fff8ed;
+    color: #ffc403;
+}
+
+.minus-btn:hover{
+    border: 1px solid #fff8ed;
+    background-color: #fff8ed;
+    color: #ffc403;
+}
+
+.add-btn{
+    border:1px solid #dc3545 !important;
+    background-color: #dc3545 !important;
+}
+
+.add-btn:hover {
+    background-color: white !important;
+    color: black;
+    transition: all .5s linear;
+}

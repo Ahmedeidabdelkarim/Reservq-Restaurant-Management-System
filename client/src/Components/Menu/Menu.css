@@ -1,0 +1,25 @@
+.photomenu{
+    transition: transform 0.3s ease;
+}
+
+.imgmenu{
+    transition: transform 0.3s ease;
+}
+.imgmenu:hover{
+    transform: scale(1.1);
+}
+
+.favorite-container{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 333;
+}
+
+.favorite-container:hover{
+    cursor: pointer;
+    background-color: rgb(150, 149, 149);
+}

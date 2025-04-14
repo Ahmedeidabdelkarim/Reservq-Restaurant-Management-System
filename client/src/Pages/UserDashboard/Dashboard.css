@@ -1,0 +1,64 @@
+.dashboard-container {
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+.sidebar {
+    border-radius: 10px;
+    height: 80vh;
+    overflow-y: auto; 
+}
+
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.nav-Item {
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.nav-Item:hover, .nav-Item.active {
+    background: #ff3366;
+    color: white;
+    border-radius: 5px;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-control, .form-select {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-danger {
+    background: #ff3366;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+    background: #cc0044;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.border-danger{
+    border: 1px solid #ff3366 !important;
+}
+

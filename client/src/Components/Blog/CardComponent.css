@@ -1,0 +1,79 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  .card img {
+    object-fit: cover;
+    height: 300px; 
+    transition: transform 0.3s ease;
+  }
+  .card:hover img {
+    transform: scale(1.1); 
+  }
+  
+  .card .card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .card .card-img-overlay:hover{
+    background: rgba(0, 0, 0, 0.8); 
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .card:hover .card-title {
+    color:#F01543 ; 
+  
+  }
+  .card-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .fa-circle{
+    font-size: 0.4rem;
+    color: #F01543;
+    margin: 5px;
+ }
+ .read{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+ }
+ .card:hover .read{
+    color: #F01543;
+
+ }
+
+ /* Add this to your CardComponent.css file */
+.blog-card {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.hover-effect:hover {
+  text-decoration: underline !important;
+}
+
+.card-img {
+  height: 220px;
+  object-fit: cover;
+}

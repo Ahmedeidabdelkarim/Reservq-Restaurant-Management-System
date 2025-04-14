@@ -1,0 +1,330 @@
+/* General Styles */
+:root {
+    --primary-color: #e50914; /* Netflix red */
+    --secondary-color: #b20710; /* Darker red for hover */
+    --accent-color: #ffffff; /* White for text */
+    --light-color: #ffffff; /* White for backgrounds */
+    --dark-color: #141414; /* Dark background (Netflix black) */
+    --darker-blue: #000000; /* Pure black for body background */
+    --success-color: #e50914; /* Red for success (to match theme) */
+    --error-color: #e50914; /* Red for errors */
+    --gray-color: #b3b3b3; /* Light gray for secondary text */
+    --border-radius: 8px; /* Slightly smaller radius for a sharper look */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    --transition: all 0.3s ease-in-out; /* Smoother transitions */
+  }
+  
+  .reservation-wrapper{
+        font-family: 'Poppins', 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--darker-blue);
+        color: var(--light-color);
+        height: 100vh;
+        overflow: hidden; /* Add this to remove scroll */
+  }
+
+  
+  /* Container spacing */
+  .container,
+  .container-fluid {
+    padding: 0 2.5rem;
+  }
+  
+  /* Header Styles */
+  .pizza-cta {
+    margin: 4rem 0 2rem;
+    text-align: center;
+  }
+  
+  .looking-for-pizza {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .pizza-slice {
+    margin-left: 0.75rem;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+  }
+  
+  .selected-table {
+    font-size: 1.3rem;
+    color: var(--success-color);
+    margin-top: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .reservation-error {
+    color: var(--error-color);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Dropdown and Input Styles */
+  .booking-form .col-sm-3 {
+    padding: 0 10px; /* Add spacing between dropdowns */
+  }
+  
+  .booking-dropdown {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    background-color: var(--dark-color);
+    cursor: pointer;
+    text-align: center;
+    color: var(--light-color);
+    transition: var(--transition);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .booking-dropdown:hover,
+  .booking-dropdown:focus {
+    border-color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .booking-dropdown-menu {
+    min-width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--dark-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem 0;
+  }
+  
+  .booking-dropdown-item {
+    padding: 0.85rem 1.25rem;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--light-color);
+    font-size: 1rem;
+  }
+  
+  .booking-dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+  }
+  
+  /* Tables Display */
+  .tables-display {
+    margin: 4rem 0;
+    padding: 3.5rem 2rem;
+    background: var(--dark-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .available-tables {
+    font-size: 1.4rem;
+    color: var(--success-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .table-display-message {
+    font-size: 1.3rem;
+    color: var(--gray-color);
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .table-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    color: var(--gray-color);
+    font-weight: 500;
+  }
+  
+  .empty-table,
+  .full-table {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0 6px;
+  }
+  
+  .empty-table {
+    background-color: var(--primary-color);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .full-table {
+    background-color: var(--gray-color);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Table Component Styles */
+  .table-container {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .table {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+  }
+  
+  .selectable-table {
+    cursor: pointer;
+  }
+  
+  .selectable-table:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+  }
+  
+  .table-row {
+    margin: 0.75rem 0;
+  }
+  
+  .table-name {
+    margin-top: 0.75rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--light-color);
+  }
+  
+  /* Reservation Details */
+  .reservation-details-container {
+    margin: 3rem 0;
+  }
+  
+  .reservation-details {
+    margin-bottom: 1.5rem;
+  }
+  
+  .reservation-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    transition: var(--transition);
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .reservation-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .reservation-input::placeholder {
+    color: var(--gray-color);
+    font-style: italic;
+  }
+  
+  /* Button Styles */
+  .book-table-btn {
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border: none;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 12px rgba(229, 9, 20, 0.3);
+  }
+  
+  .book-table-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(229, 9, 20, 0.5);
+  }
+  
+  /* Make dropdowns the same height on all browsers */
+  .dropdown-toggle {
+    height: 100%;
+  }
+  
+  /* Row Spacing */
+  .row {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .looking-for-pizza {
+      font-size: 2.2rem;
+    }
+  
+    .pizza-slice {
+      font-size: 1.8rem;
+    }
+  
+    .table-container {
+      padding: 0.5rem;
+    }
+  
+    .booking-dropdown,
+    .reservation-input {
+      font-size: 1rem;
+      padding: 0.85rem;
+    }
+  
+    .book-table-btn {
+      font-size: 1.1rem;
+      padding: 0.85rem 2rem;
+    }
+  
+    .tables-display {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .table-display-message {
+      padding: 3rem 0;
+      font-size: 1.1rem;
+    }
+  
+    .reservation-details {
+      margin-bottom: 1rem;
+    }
+  
+    .booking-form .col-sm-3 {
+      padding: 0 5px; /* Smaller padding on mobile */
+    }
+  }
+  
+  /* RTL Support for Arabic */
+  [dir="rtl"] {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .booking-dropdown-menu {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .table-key {
+    flex-direction: row-reverse;
+  }

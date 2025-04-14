@@ -1,0 +1,9 @@
+.edited{
+    background-color: #000929;
+    color: white;
+    border: none;
+    margin: 5px;
+}
+.edited:hover{
+    background-color: #383d4d;
+}
