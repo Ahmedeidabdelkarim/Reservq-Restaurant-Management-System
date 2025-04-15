@@ -2,7 +2,8 @@ import { AuthRequest } from "src/middlewares/authMiddleware";
 import { Request, Response } from "express";
 import Reservation from "../models/reservationModel";
 import Customer from "../models/customerModel";
-
+import sgMail from "../config/sendgrid";
+import { MailDataRequired } from "@sendgrid/mail";
 export const createReservation = async (req: AuthRequest, res: Response) => {
     if (!req.user) {
         res.status(401).json({ error: "you are not authorized to create a reservation" });
@@ -22,13 +23,26 @@ export const createReservation = async (req: AuthRequest, res: Response) => {
     }
 
     try {
-        const profileId = await Customer.findOne({userId:req.user.id},{id:1} );
+        const profileId = await Customer.findOne({userId:req.user.id},{id:1, email:1, firstName:1, lastName:1} );
         if (!profileId) {
             res.status(404).json({ error: "User not found or not a Customer" });
             return;
         }
         const reservation = new Reservation({ profileId:profileId, date:date, hour:hour, location:location, numberOfGuests:numberOfGuests });
         await reservation.save();
+        const msg: MailDataRequired = {
+                        to: profileId.email as string,
+                        from: process.env.SENDGRID_EMAIL as string,
+                        templateId: 'd-fd817fc5f8e44f738f7991323a7cb695',
+                        dynamic_template_data: {
+                          reservation_name: `${profileId.firstName} ${profileId.lastName}`,
+                          reservation_date: date,
+                          reservation_time: hour,
+                          guest_count: numberOfGuests,
+                          reservation_location: location
+                        },
+                      } as MailDataRequired; // Type assertion to avoid TypeScript error
+        await sgMail.send(msg)
         res.status(201).json(reservation);
     } catch (error) {
         res.status(500).json({ error: "Failed to create reservation" });
