@@ -3,6 +3,7 @@ import Order from "../models/orderModel";
 import { AuthRequest } from "../middlewares/authMiddleware";
 import { InsufficientQuantityError, ProductNotFoundError, ApplicationError, PaypalApiError } from "../utils/Exceptions";
 import Product from "../models/productModel";
+import Customer from "../models/customerModel";
 import Discount from "../models/discountModel";
 import paypal from "../config/paypal";
 import mongoose from "mongoose";
@@ -15,7 +16,8 @@ import {
   PayeePaymentMethodPreference,
   ShippingPreference,
   CheckoutPaymentIntent,
-  ApiError
+  ApiError,
+  CustomError
 } from "@paypal/paypal-server-sdk";
 
 interface OrderItem {
@@ -257,6 +259,14 @@ export const createOrder = async (req: AuthRequest, res: Response): Promise<void
       });
       
       await order.save({ session });
+      // add order to user
+      let customer = await Customer.findOne({userId: req.user.id}).session(session);
+      if (!customer) {
+        throw new ApplicationError("Customer not found", 404);
+      }
+      customer.orders += 1;
+      customer.TotalSpent += total;
+      await customer.save({ session });
 
       // paymment using paypal
       if (paymentMethod === "paypal") {
