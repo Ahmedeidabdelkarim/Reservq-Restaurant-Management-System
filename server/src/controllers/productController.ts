@@ -142,3 +142,35 @@ export const deleteProduct = async (req: AuthRequest, res: Response): Promise<vo
     res.status(500).json({ message: "Server error" });
   }
 };
+
+export const searchProduct = async (req: AuthRequest, res: Response): Promise<void> => {
+  try {
+    const { query } = req.body;
+    console.log(query)
+    const products = await Product.aggregate([{
+      $search: {
+        index: "default",
+        compound:{
+            should: [
+              { text: { query: query, path: "name" } },
+              {autocomplete:{query: query, path: "name",fuzzy: {}}},
+            ],
+          },
+        }
+    },
+    {
+      $project: {
+        _id: 1,
+        name: 1,
+        images: 1,
+      }
+    },
+    {
+      $limit: 10
+    }
+  ]);
+    res.status(200).json(products);
+  } catch (error) {
+    res.status(500).json({ message: 'failed to perform search' });
+  }
+} 
