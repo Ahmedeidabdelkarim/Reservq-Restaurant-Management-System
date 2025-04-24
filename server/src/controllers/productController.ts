@@ -160,7 +160,8 @@ export const searchProduct = async (req: AuthRequest, res: Response): Promise<vo
     },
     {
       $project: {
-        _id: 1,
+        _id: 0,
+        id: "$_id",
         name: 1,
         images: 1,
       }
