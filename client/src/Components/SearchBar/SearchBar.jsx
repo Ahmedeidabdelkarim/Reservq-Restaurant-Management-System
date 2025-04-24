@@ -45,7 +45,7 @@ const SearchBar = () => {
   const fetchData = async (searchTerm) => {
     setLoading(true);
     try {
-      const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/products`);
+      const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/product/search?query=${searchTerm}`);
   
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);

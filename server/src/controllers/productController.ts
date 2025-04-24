@@ -145,7 +145,7 @@ export const deleteProduct = async (req: AuthRequest, res: Response): Promise<vo
 
 export const searchProduct = async (req: AuthRequest, res: Response): Promise<void> => {
   try {
-    const { query } = req.body;
+    const { query } = req.query;
     console.log(query)
     const products = await Product.aggregate([{
       $search: {
