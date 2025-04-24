@@ -59,11 +59,7 @@ const SearchBar = () => {
         throw new Error("Unexpected API response structure");
       }
   
-      const filteredResults = foodArray.filter((item) =>
-        item.name && item.name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-  
-      setResults(filteredResults);
+      setResults(foodArray);
       setShowResults(true);
     } catch (error) {
       console.error("Error fetching data:", error);
