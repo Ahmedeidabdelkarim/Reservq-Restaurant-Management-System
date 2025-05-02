@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import food1 from '../../../src/assets/foods/food1.png'
 import food2 from '../../../src/assets/foods/food2.png'
 import food3 from '../../../src/assets/foods/food3.png'
-import items from "../../data/foods.json";
 import { useCartContext } from '../../Contexts/CartContext';
 
 const RecentOrders = () => {
@@ -14,7 +13,7 @@ const RecentOrders = () => {
     const isRTL = i18n.language === 'ar';
     const { addToCart } = useCartContext();
 
-    const orders = [
+    const items = [
         {
             name: "Eggplant Parmesan & Linguine",
             price: "$30",
